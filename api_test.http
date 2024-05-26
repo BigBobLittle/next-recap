@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:3000/api/hello
+
+### 
+GET {{baseUrl}}/s?query=hi
+### 
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "comment": "4test next comment"
+}
+
+### 
+GET {{baseUrl}}/1
+
+### 
+PATCH {{baseUrl}}/2
+Content-Type: application/json
+
+{
+    "comment": "updated new comment"
+}
